@@ -1,0 +1,419 @@
+$khand: var(--font-khand)
+$open-sans: var(--font-open-sans)
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $open-sans
+
+@mixin flex($j: center,$a: center,$d: row,$g: 0px)
+  display: flex
+  justify-content: $j
+  align-items: $a
+  flex-direction: $d
+  gap: $g
+
+@mixin baseBackground($l:0,$a:100%)
+  background-color: lch(from var(--base-color) calc(l + $l) c h / $a) !important
+
+@mixin baseFill($l:0)
+  fill: lch(from var(--base-color) calc(l + $l) c h)
+
+@mixin baseStroke($l:0)
+  stroke: lch(from var(--base-color) calc(l + $l) c h)
+
+@mixin baseColor($l:0)
+  color: lch(from var(--base-color) calc(l + $l) c h)
+
+@mixin baseBorder($l:0)
+  border-color: lch(from var(--base-color) calc(l + $l) c h) !important
+
+@mixin textBackground($l:0,$a:100%)
+  background-color: lch(from var(--text-color) calc(l + $l) c h / $a)
+
+@mixin textFill($l:0)
+  fill: lch(from var(--text-color) calc(l + $l) c h)
+
+@mixin textStroke($l:0)
+  stroke: lch(from var(--text-color) calc(l + $l) c h)
+
+@mixin textColor($l:0)
+  color: lch(from var(--text-color) calc(l + $l) c h) !important
+
+@mixin textBorder($l:0)
+  border-color: lch(from var(--text-color) calc(l + $l) c h)
+
+@mixin accentBackground($l:0,$a:100%)
+  background-color: lch(from var(--accent-color) calc(l + $l) c h / $a) !important
+
+@mixin accentFill($l:0)
+  fill: lch(from var(--accent-color) calc(l + $l) c h)
+
+@mixin accentStroke($l:0)
+  stroke: lch(from var(--accent-color) calc(l + $l) c h)
+
+@mixin accentColor($l:0)
+  color: lch(from var(--accent-color) calc(l + $l) c h) !important
+
+@mixin accentBorder($l:0)
+  border-color: lch(from var(--accent-color) calc(l + $l) c h)
+
+.topbar
+  @include baseBackground(-5)
+  width: 100%
+  @include flex(space-between,center,row,10px)
+  padding: 10px 20px
+  @media (max-width:1000px)
+    padding: 0px
+    height: 50px
+  .col
+    height: 100%
+    .social
+      @include flex($g: 6px)
+      a
+        @include baseBackground()
+        @include flex()
+        height: 30px
+        width: 30px
+        svg
+          @include accentColor()
+          width: 14px
+          height: 14px
+        &:hover
+          @include accentBackground()
+          svg
+            @include baseColor()
+      @media (max-width:1000px)
+        width: 100%
+        height: 100%
+        justify-content: space-evenly
+        gap: 1px
+        border-bottom: 1px solid
+        @include baseBorder(-5)
+        a
+          width: 100%
+          height: 100%
+    .clg
+      @include flex($g: 6px)
+      @media (max-width:1000px)
+        display: none
+      svg
+        @include accentColor()
+        width: 16px
+        height: 16px
+      span,a
+        font-size: 14px
+        text-decoration: none
+        @include textColor(-10)
+      a
+        &:hover
+          text-decoration: underline
+    &:nth-child(1)
+      @include flex(flex-start,center,row,20px)
+      @media (max-width:1000px)
+        display: none
+    &:nth-last-child(1)
+      @include flex(flex-end,center,row,20px)
+      @media (max-width:1000px)
+        justify-content: center
+        width: 100%
+
+header
+  @include flex(space-between,center,row,10px)
+  height: 80px
+  z-index: 2
+  position: sticky
+  @include baseBackground()
+  border-bottom: 1px solid
+  @include baseBorder(-5)
+  top: 0px
+  .col
+    padding: 0px 20px
+  .mobmenu
+    @include accentBackground()
+    width: 100px
+    @include flex($g: 10px)
+    height: 100%
+    @include baseColor()
+    cursor: pointer
+    svg
+      height: 34px
+      width: 34px
+    @media (min-width:850px)
+      display: none
+  .menu
+    @include flex(flex-end,center,row,25px)
+    height: 100%
+    @media (max-width:850px)
+      display: none
+    ul
+      @include flex(flex-start,center,row,25px)
+      list-style: none
+      li
+        a
+          text-decoration: none
+          font-weight: 600
+          @include accentColor()
+          &:hover
+            @include textColor()
+      .active
+        @include textColor()
+    .quote
+      @include accentBackground()
+      width: 100%
+      min-width: 200px
+      @include flex($g: 10px)
+      height: 100%
+      @include baseColor()
+      font-weight: 600
+      text-decoration: none
+      &:hover
+        @include accentBackground(-8)
+  @media (max-width:850px)
+    .-mobile-open
+      position: absolute
+      display: flex
+      left: 0px
+      top: 80px
+      flex-direction: column
+      z-index: 2
+      width: 100%
+      height: fit-content
+      gap: 0px
+      ul
+        flex-direction: column
+        justify-content: flex-start
+        width: 100%
+        gap: 1px
+        @include baseBackground(-5)
+        li
+          @include flex(flex-start,center,row,0px)
+          width: 100%
+          a
+            padding: 25px
+            @include baseBackground()
+            width: 100%
+      .quote
+        height: 80px
+        border-bottom: 1px solid
+        @include accentBorder(-20)
+
+.rfm-marquee
+  @include textBackground(20)
+  padding: 10px
+  @include baseColor()
+  font-size: 12px
+
+.slick-slider
+  width: 100%
+  height: calc( 100svh - 166px )
+  .slick-list
+    height: 100%
+    .slick-slide
+      height: 100%
+      width: 100%
+      div
+        height: calc( 100svh - 166px )
+        position: relative
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+        .overlay
+          position: absolute
+          width: 100%
+          height: calc( 100svh - 166px )
+          top: 0px
+          left: 0px
+          background: linear-gradient(75deg,#000000e1,lch(from var(--accent-color) calc(l - 30) c h / .3))
+          @include flex(center,flex-start,column,10px)
+          padding: 30px 10%
+          p,h2
+            @include baseColor()
+            &:nth-child(1)
+              border: 1px solid
+              @include accentBorder()
+              font-size: 12px
+              padding: 6px 14px
+            &:nth-last-child(2)
+              max-width: 670px
+              @include baseColor(-10)
+              font-size: clamp(14px,3vw,16px)
+          h2
+            font-family: $khand
+            font-size: clamp(20px,3vw,36px)
+            margin-bottom: -10px
+            @media (max-width:700px)
+              margin-bottom: 0px
+          a
+            text-decoration: none
+            @include accentBackground()
+            @include baseColor()
+            padding: 12px 18px
+            font-weight: 600
+            margin-top: 10px
+            &:hover
+              @include accentBackground(-8)
+            @media (max-width:700px)
+              font-size: 14px
+
+.about-us
+  width: 100%
+  height: 100svh
+  @include flex()
+  padding: 20px
+  @media (max-width:1000px)
+    height: fit-content
+  .center
+    max-width: 1200px
+    width: 100%
+    @include flex($g:20px)
+    @media (max-width:1000px)
+      flex-direction: column
+    .col
+      width: 100%
+      &:nth-last-child(1)
+        @include flex(flex-start,flex-start,column,21px)
+        h2
+          font-size: clamp(24px,3vw,30px)
+          span
+            @include accentColor()
+      p
+        &:nth-child(1)
+          @include accentColor()
+          font-weight: 700
+          text-transform: uppercase
+        &:nth-child(3)
+          @include textColor(20)
+          font-size: clamp(10px,2vw,14px)
+      .button
+        width: max-content
+        @include accentBackground()
+        @include baseColor()
+        padding: 14px 22px
+        @include flex($g:10px)
+        text-decoration: none
+        span
+          font-weight: 700
+        &:hover
+          @include accentBackground(-8)
+      ul
+        width: 100%
+        list-style: none
+        @include flex(flex-start,flex-start,column,20px)
+        li
+          width: 100%
+          @include flex(flex-start,center,row,10px)
+          .number
+            @include flex()
+            min-width: 50px
+            max-width: 50px
+            min-height: 50px
+            max-height: 50px
+            @include baseBackground(-5)
+            font-weight: 800
+          .col
+            @include flex(flex-start,flex-start,column,2px)
+            b
+              font-size: 14px
+              @include textColor(10)
+            p
+              font-size: clamp(10px,2vw,12px)
+              @include textColor(20)
+      .img
+        position: relative
+        width: max-content
+        height: fit-content
+        aspect-ratio: 4 / 4
+        @media (max-width:1000px)
+          margin: 20px
+          width: calc(100% - 40px)
+        .overlay
+          position: absolute
+          width: 100%
+          height: calc( 100% - 5px )
+          top: 0px
+          left: 0px
+          background: linear-gradient(75deg,lch(from var(--accent-color) calc(l - 30) c h / .4),transparent)
+        .exp
+          position: absolute
+          top: -20px
+          right: -20px
+          @include textBackground($a: 50%)
+          @include baseColor()
+          width: 150px
+          height: 150px
+          @include flex($d: column,$g:3px )
+          font-size: 12px
+          h1
+            font-size: 36px
+            sub
+              font-size: 16px
+        img
+          object-fit: cover
+          height: 100%
+          width: 100%
+
+footer
+  height: fit-content
+  width: 100%
+  @include baseBackground(-100)
+  display: grid
+  place-items: center
+  min-height: 50svh
+  background-image: repeating-linear-gradient(0deg, lch(from var(--base-color) calc(l - 96) c h) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, lch(from var(--base-color) calc(l - 96) c h) 0 1px, transparent 1px 24px)
+  .grid
+    padding: 20px
+    display: flex
+    flex-wrap: wrap
+    height: 100%
+    place-content: center
+    gap: 80px
+    @media (max-width:600px)
+      width: 100%
+      padding: 30px 20px
+      @include flex(flex-start,flex-start,column,20px)
+      .col
+        width: 100%
+    .col
+      flex-grow: 1
+      @include flex(flex-start,flex-start,column,15px)
+      h2
+        @include textColor(80)
+      ul
+        list-style: none
+        @include flex(flex-start,flex-start,column,10px)
+        li
+          @include flex(flex-start,center,row,8px)
+          .social
+            @include flex($g: 1px)
+            @include baseBackground(-95)
+            border: 1px solid
+            @include baseBorder(-95)
+            a
+              @include baseBackground(-100)
+              width: 40px
+              height: 40px
+              @include flex()
+              &:hover
+                svg
+                  @include accentColor()
+          b
+            font-size: 14px
+            @include textColor(60)
+          svg
+            height: 14px
+            width: 14px
+            @include textColor(60)
+          a,span
+            @include textColor(60)
+            font-size: 14px
+          a
+            text-decoration: none
+            &:hover
+              @include accentColor()
+          .active
+            @include accentColor()
+        .y
+          @include flex(center,flex-start,column,2px)

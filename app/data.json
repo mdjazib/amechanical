@@ -1,0 +1,52 @@
+[
+    {
+        "slug": "tyres",
+        "title": "Tyres",
+        "description": "Your vehicle’s tyres are the only part that makes direct contact with the road, and their quality determines safety, comfort, and fuel efficiency. At our workshop, we provide a wide range of premium new tyres as well as carefully inspected used ones to suit every budget. Whether you drive a compact city car, a family SUV, or a heavy-duty truck, we stock sizes and brands that deliver excellent grip, durability, and road performance. Our team also helps you choose the right tyre for your driving style, ensuring maximum safety and peace of mind in all weather conditions."
+    },
+    {
+        "slug": "battery",
+        "title": "Battery",
+        "description": "A weak or dead battery can leave you stranded at the most inconvenient times. We supply and install high-quality car batteries from trusted brands, offering both new and tested used options with warranties ranging from 1 to 3 years. Our service includes a full battery health check, proper installation, and eco-friendly disposal of your old unit. Whether your car struggles to start in the morning or your current battery has completely failed, we provide a quick, reliable, and affordable solution to keep your car powered and ready for the road."
+    },
+    {
+        "slug": "brake-servicing",
+        "title": "Brake Servicing",
+        "description": "Your braking system is the most important safety feature of your car, and regular servicing ensures it works when you need it most. Our brake servicing includes a thorough inspection of brake pads, rotors, discs, and fluid levels to detect wear or damage. Starting at just $79, we repair or replace worn parts using top-grade materials to restore stopping power. With our expertise, you can drive confidently knowing that your car will respond quickly and safely in all traffic conditions."
+    },
+    {
+        "slug": "timing-belt",
+        "title": "Timing Belt",
+        "description": "The timing belt synchronizes your engine’s internal components, and if it fails, the damage can be catastrophic. Our timing belt service, starting from $250, includes careful inspection and replacement using manufacturer-recommended parts. We ensure your engine continues to run smoothly and efficiently, preventing costly breakdowns and extending your car’s lifespan. If you’ve noticed unusual noises, difficulty starting, or your vehicle has reached its service interval, it’s time to let our experts take care of your timing belt."
+    },
+    {
+        "slug": "suspension",
+        "title": "Suspension",
+        "description": "Your suspension system is responsible for comfort, control, and handling while driving. If your car feels unstable, bumpy, or noisy, it’s often a sign of suspension issues. Our specialised service covers shock absorbers, struts, ball joints, and springs, ensuring that your car remains stable on rough roads and smooth during everyday drives. With professional repairs and replacements, we restore your suspension system to its original performance so you can enjoy a safe, comfortable, and balanced ride."
+    },
+    {
+        "slug": "crash-repairs",
+        "title": "Crash Repairs",
+        "description": "Accidents can happen to anyone, but restoring your car to its original condition requires expert hands. Our crash repair specialists handle everything from minor dents and scratches to full body panel replacements. We work closely with insurance companies to make the process simple and stress-free for you. Using advanced tools and high-quality materials, we ensure your car not only looks brand-new but also meets safety standards. Our goal is to take away the stress of repairs and give you back your vehicle in perfect condition."
+    },
+    {
+        "slug": "car-wash-detailing",
+        "title": "Car Wash & Detailing",
+        "description": "A clean car doesn’t just look good – it feels better to drive. Our professional car wash and detailing service goes beyond a regular wash, covering deep cleaning for both the interior and exterior. Starting at just $79, we remove dust, stains, and grime from every corner, while polishing the exterior for a glossy, fresh look. From shampooing carpets to restoring dashboard shine, we give your car the care it deserves. The result is a vehicle that looks newer, smells fresh, and leaves a lasting impression."
+    },
+    {
+        "slug": "brake-pads",
+        "title": "Brake Pads",
+        "description": "Brake pads wear down over time, and delaying their replacement can damage your rotors and compromise safety. Our brake pad replacement service, starting from $99, ensures you always have reliable stopping power. We use high-quality pads designed for durability and smooth braking performance. Our technicians check the entire braking system during replacement, so you drive away with a safer, quieter, and more responsive braking experience."
+    },
+    {
+        "slug": "ac-service",
+        "title": "AC Service",
+        "description": "Driving without a working air conditioning system can be uncomfortable in extreme heat or cold. Our AC service covers everything from refrigerant refills to leak detection and heater repairs. We make sure your air conditioning system delivers consistent cooling in the summer and reliable heating in the winter. With advanced diagnostics, we detect hidden issues and fix them before they become major problems. Stay comfortable in every season with our reliable AC servicing."
+    },
+    {
+        "slug": "mobile-car-tow-truck",
+        "title": "Mobile Car & Tow Truck Service",
+        "description": "Getting stuck on the road can be stressful, but our mobile car and tow truck service is always ready to help. Whether you’ve experienced a breakdown, a flat tyre, or an accident, we provide quick roadside assistance and safe towing. Our team is equipped to handle emergencies 24/7, ensuring that you and your vehicle are taken care of without delay. With just one call, we bring professional support right to your location, making roadside troubles a thing of the past."
+    }
+]
