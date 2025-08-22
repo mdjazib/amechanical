@@ -1,15 +1,19 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import servicesData from "@/app/data.json"
 import { useParams } from 'next/navigation'
 import Link from 'next/link'
+import { useStore } from '@/useStore'
 const Content = () => {
+    const { data: servicesData } = useStore();
     const { slug } = useParams();
     const [data, setData] = useState(servicesData);
     const [service, setService] = useState({ title: "", description: "" });
     useEffect(() => {
+        setData(servicesData);
+    }, [servicesData])
+    useEffect(() => {
         setService(...data.filter(e => e.slug === slug));
-    }, []);
+    }, [data]);
     return (
         <div>
             {
@@ -17,8 +21,8 @@ const Content = () => {
                     <Link key={i} href={`/service/${e.slug}`} className={slug === e.slug ? "active" : "inactive"}>{e.title}</Link>
                 ))
             }
-            <h1>{service.title}</h1>
-            <p>{service.description}</p>
+            <h1>{service?.title}</h1>
+            <p>{service?.description}</p>
         </div>
     )
 }

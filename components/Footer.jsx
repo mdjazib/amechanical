@@ -1,14 +1,17 @@
 "use client"
 import { ChevronRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Socials from './Socials'
 import { usePathname } from 'next/navigation'
 import servicesData from "@/app/data.json"
+import { useStore } from '@/useStore'
 
 const Footer = () => {
     const pathname = usePathname();
-    const [data, setData] = useState(servicesData.map(e => { return { title: e.title, slug: e.slug } }).slice(0, 4));
+    const { setData } = useStore();
+    const data = servicesData.map(e => { return { title: e.title, slug: e.slug } }).slice(0, 4);
+    useEffect(() => { setData(servicesData) }, []);
     return (
         <footer>
             <div className="grid">
