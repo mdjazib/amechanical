@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       <header>
         <div className="col">
-          <Image src="/logo.png" alt="A Mechanical Repair Logo" width={180} height={50} />
+          <Image src="/amrlogo.png" alt="A Mechanical Repair Logo" width={290} height={50} />
         </div>
         <div className={`menu ${menu && "-mobile-open"}`}>
           <ul>

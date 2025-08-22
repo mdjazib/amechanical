@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css"
 import Image from 'next/image'
 import Link from 'next/link'
 import About from '@/components/About'
+import Services from '@/components/Services'
+import Faqs from '@/components/Faqs'
 
 const page = () => {
   var settings = {
@@ -48,6 +50,8 @@ const page = () => {
         </div>
       </Slider>
       <About />
+      <Services />
+      <Faqs />
     </div>
   )
 }
