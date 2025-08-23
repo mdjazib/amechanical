@@ -1,11 +1,11 @@
 "use client"
 import { AlignJustify, ArrowRight, Clock4, MapPin, Phone, X } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Marquee from "react-fast-marquee"
 import Socials from './Socials'
 import { usePathname } from 'next/navigation'
+import Logo from '@/app/Logo'
 
 const Header = () => {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ const Header = () => {
       <div className="topbar">
         <div className="col">
           <div className="clg"><MapPin /> <span>47, Wodonga Street, Beverly, SA 5009</span></div>
-          <div className="clg"><Clock4 /> <span>Mon - Fri : 09.00 AM - 09.00 PM</span></div>
+          <div className="clg"><Clock4 /> <span>Mon - Fri : 09.00 AM - 05.00 PM</span></div>
         </div>
         <div className="col">
           <div className="clg"><Phone /><a href="#" >+61 406 257932</a></div>
@@ -25,7 +25,7 @@ const Header = () => {
       </div>
       <header>
         <div className="col">
-          <Image src="/amrlogo.png" alt="A Mechanical Repair Logo" width={290} height={50} />
+          <Link href="/"><Logo /></Link>
         </div>
         <div className={`menu ${menu && "-mobile-open"}`}>
           <ul>
