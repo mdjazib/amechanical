@@ -6,7 +6,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Tilt from 'react-parallax-tilt'
 
-const Services = ({ slug = "" }) => {
+const Services = ({ slug = "", title = "Our Services" }) => {
     const { data: servicesData } = useStore();
     const [data, setData] = useState(servicesData);
     useEffect(() => {
@@ -16,7 +16,7 @@ const Services = ({ slug = "" }) => {
         <div className="our-services">
             <div className="header">
                 <p><Asterisk /><span>Quality & Affordable</span><Asterisk /></p>
-                <h1>Our Services</h1>
+                <h1>{title}</h1>
                 <p>Your car deserves the best care — and that’s exactly what we deliver.</p>
             </div>
             <div className="services">

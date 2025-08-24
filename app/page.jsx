@@ -8,6 +8,8 @@ import Link from 'next/link'
 import About from '@/components/About'
 import Services from '@/components/Services'
 import Faqs from '@/components/Faqs'
+import Packages from '@/components/Packages'
+import Contact from '@/components/Contact'
 
 const page = () => {
   var settings = {
@@ -52,6 +54,8 @@ const page = () => {
       <About />
       <Services />
       <Faqs />
+      <Packages />
+      <Contact />
     </div>
   )
 }

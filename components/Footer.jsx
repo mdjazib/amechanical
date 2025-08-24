@@ -10,7 +10,7 @@ import { useStore } from '@/useStore'
 const Footer = () => {
     const pathname = usePathname();
     const { setData } = useStore();
-    const data = servicesData.map(e => { return { title: e.title, slug: e.slug } }).slice(0, 4);
+    const data = servicesData.map(e => { return { title: e.title, slug: e.slug } }).slice(0, 6);
     useEffect(() => { setData(servicesData) }, []);
     return (
         <footer>
@@ -47,7 +47,9 @@ const Footer = () => {
                     <h2>Pages</h2>
                     <ul>
                         <li><ChevronRight /> <Link href="/" className={pathname === "/" ? "active" : "inactive"}>Home</Link></li>
+                        <li><ChevronRight /> <Link href="/road-side-assistance" className={pathname === "/road-side-assistance" ? "active" : "inactive"}>Road Side Assistance</Link></li>
                         <li><ChevronRight /> <Link href="/about" className={pathname === "/about" ? "active" : "inactive"}>About</Link></li>
+                        <li><ChevronRight /> <Link href="/packages" className={pathname === "/packages" ? "active" : "inactive"}>Packages</Link></li>
                         <li><ChevronRight /> <Link href="/services" className={pathname === "/services" ? "active" : "inactive"}>Services</Link></li>
                         <li><ChevronRight /> <Link href="/contact" className={pathname === "/contact" ? "active" : "inactive"}>Contact</Link></li>
                     </ul>

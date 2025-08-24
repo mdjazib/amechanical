@@ -30,7 +30,9 @@ const Header = () => {
         <div className={`menu ${menu && "-mobile-open"}`}>
           <ul>
             <li onClick={() => { setMenu(false) }}><Link href="/" className={pathname === "/" ? "active" : "inactive"}>Home</Link></li>
+            <li onClick={() => { setMenu(false) }}><Link href="/road-side-assistance" className={pathname === "/road-side-assistance" ? "active" : "inactive"}>Road Side Assistance</Link></li>
             <li onClick={() => { setMenu(false) }}><Link href="/about" className={pathname === "/about" ? "active" : "inactive"}>About</Link></li>
+            <li onClick={() => { setMenu(false) }}><Link href="/packages" className={pathname === "/packages" ? "active" : "inactive"}>Packages</Link></li>
             <li onClick={() => { setMenu(false) }}><Link href="/services" className={pathname === "/services" ? "active" : "inactive"}>Services</Link></li>
             <li onClick={() => { setMenu(false) }}><Link href="/contact" className={pathname === "/contact" ? "active" : "inactive"}>Contact</Link></li>
           </ul>
