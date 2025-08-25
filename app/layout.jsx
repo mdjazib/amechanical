@@ -17,8 +17,31 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title: "A Mechanical Repairs",
-  description: "Fast & relieable car repairing and upgradings in australia.",
+  description: "A Mechanical Repairs is your trusted partner for complete automotive care in Australia. We provide fast, reliable, and affordable car repairs, servicing, and upgrades with a commitment to quality workmanship and customer satisfaction. From routine maintenance and logbook servicing to complex mechanical repairs, roadside assistance, tyres, brakes, and suspension upgrades – we ensure your vehicle stays safe, reliable, and road-ready at all times.",
+  openGraph: {
+    title: "A Mechanical Repairs",
+    description: "A Mechanical Repairs is your trusted partner for complete automotive care in Australia. We provide fast, reliable, and affordable car repairs, servicing, and upgrades with a commitment to quality workmanship and customer satisfaction. From routine maintenance and logbook servicing to complex mechanical repairs, roadside assistance, tyres, brakes, and suspension upgrades – we ensure your vehicle stays safe, reliable, and road-ready at all times.",
+    url: "https://amechanical.com.au",
+    siteName: "A Mechanical Repairs",
+    images: [
+      {
+        url: "https://amechanical.vercel.app/slider (1).jpeg",
+        width: 1200,
+        height: 630,
+        alt: "A Mechanical Repairs Workshop",
+      },
+    ],
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A Mechanical Repairs",
+    description: "A Mechanical Repairs is your trusted partner for complete automotive care in Australia. We provide fast, reliable, and affordable car repairs, servicing, and upgrades with a commitment to quality workmanship and customer satisfaction. From routine maintenance and logbook servicing to complex mechanical repairs, roadside assistance, tyres, brakes, and suspension upgrades – we ensure your vehicle stays safe, reliable, and road-ready at all times.",
+    images: ["https://amechanical.vercel.app/slider (1).jpeg"],
+  },
 };
+
 
 export default function RootLayout({ children }) {
   const theme = {
