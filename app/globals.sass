@@ -135,7 +135,21 @@ header
   top: 0px
   .col
     padding: 0px 20px
+    .logo-link
+      @include flex(flex-start,center,row,8px)
+      text-decoration: none
+      @include textColor()
+      .text
+        @include flex(flex-start,flex-start,column,2px)
+        h2
+          font-size: clamp(14px,3vw,24px)
+          white-space: nowrap
+        p
+          white-space: nowrap
+          font-size: clamp(6px,2vw,12px)
     .logo
+      @media (max-width:780px)
+        width: 80px
       .accent
         @include accentFill()
       .text
@@ -264,6 +278,10 @@ header
             padding: 12px 18px
             font-weight: 600
             margin-top: 10px
+            @include flex(flex-start,center,row,10px)
+            svg
+              width: 16px
+              height: 16px
             &:hover
               @include accentBackground(-8)
             @media (max-width:700px)

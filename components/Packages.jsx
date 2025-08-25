@@ -13,7 +13,7 @@ const Packages = () => {
                 <div className="center">
                     <div className="package">
                         <div className="header">
-                            <h1>$89</h1>
+                            <h1>01</h1>
                             <p>Standard</p>
                         </div>
                         <ul>
@@ -29,7 +29,7 @@ const Packages = () => {
                     </div>
                     <div className="package">
                         <div className="header">
-                            <h1>$249</h1>
+                            <h1>02</h1>
                             <p>VIP</p>
                         </div>
                         <ul>
@@ -54,7 +54,7 @@ const Packages = () => {
                     </div>
                     <div className="package">
                         <div className="header">
-                            <h1>$149</h1>
+                            <h1>03</h1>
                             <p>Advanced</p>
                         </div>
                         <ul>

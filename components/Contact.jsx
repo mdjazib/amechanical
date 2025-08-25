@@ -6,7 +6,7 @@ const Contact = () => {
     const [form, setForm] = useState({
         name: "",
         email: "",
-        service: "Standard",
+        rego: "",
         message: ""
     });
 
@@ -20,7 +20,7 @@ const Contact = () => {
         const phone = "+61406257932";
         const text = `Hello, my name is ${form.name}.
 Email: ${form.email}
-Service: ${form.service}
+Rego: ${form.rego}
 Message: ${form.message}`;
         const url = `https://wa.me/${phone.replace(/\D/g, "")}?text=${encodeURIComponent(text)}`;
         window.open(url, "_blank");
@@ -68,16 +68,15 @@ Message: ${form.message}`;
                             />
                         </div>
                         <div className="input">
-                            <p>Service</p>
-                            <select
-                                name="service"
-                                value={form.service}
+                            <p>REGO</p>
+                            <input
+                                type="text"
+                                name="rego"
+                                placeholder='Enter REGO'
+                                value={form.rego}
                                 onChange={handleChange}
-                            >
-                                <option value="Standard">Standard</option>
-                                <option value="Advanced">Advanced</option>
-                                <option value="VIP">VIP</option>
-                            </select>
+                                required
+                            />
                         </div>
                         <div className="input">
                             <p>Message</p>

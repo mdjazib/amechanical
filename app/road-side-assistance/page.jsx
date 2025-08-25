@@ -56,7 +56,6 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <Services title={"More Services"} />
         </>
     )
 }
