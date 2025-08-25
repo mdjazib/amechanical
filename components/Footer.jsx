@@ -1,7 +1,7 @@
 "use client"
 import { ChevronRight, Mail, MapPin, Phone } from 'lucide-react'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Socials from './Socials'
 import { usePathname } from 'next/navigation'
 import servicesData from "@/app/data.json"

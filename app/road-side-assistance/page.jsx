@@ -1,9 +1,14 @@
-"use client"
 import Services from '@/components/Services'
 import { ChevronsRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
+export const metadata = {
+    title: 'Road Side Assistance • A Mechanical Repairs',
+    description:
+        'Stuck on the road? A Mechanical Repairs provides fast and reliable roadside assistance services to get you moving again with peace of mind.',
+}
 
 const page = () => {
     return (

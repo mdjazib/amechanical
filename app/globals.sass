@@ -59,6 +59,11 @@ $open-sans: var(--font-open-sans)
 @mixin accentBorder($l:0,$a:100%)
   border-color: lch(from var(--accent-color) calc(l + $l) c h / $a)
 
+*
+  &::selection
+    @include textBackground(20)
+    @include baseColor()
+
 .topbar
   @include baseBackground(-5)
   width: 100%
