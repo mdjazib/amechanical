@@ -28,7 +28,7 @@ const Footer = () => {
                     <h2>Working Hours</h2>
                     <ul>
                         <li className="y"><b>Monday - Friday:</b> <span>09.00 AM - 05.00 PM</span></li>
-                        <li className="y"><b>Public Holidays:</b> <span>Open & Booking person only</span></li>
+                        <li className="y"><b>Public Holidays:</b> <span>Open for booking only</span></li>
                         <li className="y"><b>Saturday:</b> <span>09.00 AM - 3.00 PM</span></li>
                         <li className="y"><b>Sunday:</b> <span>10.00 AM - 3.00 PM</span></li>
                     </ul>
