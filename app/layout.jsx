@@ -2,6 +2,7 @@ import { Khand, Open_Sans } from "next/font/google";
 import "./globals.sass";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsApp from "./WhatsApp";
 
 const khand = Khand({
   variable: "--font-khand",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body className={`${khand.variable} ${openSans.variable}`} style={theme}>
         <Header />
         {children}
+        <WhatsApp />
         <Footer />
       </body>
     </html>

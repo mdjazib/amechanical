@@ -18,9 +18,9 @@ const Footer = () => {
                 <div className="col">
                     <h2>Address</h2>
                     <ul>
-                        <li><MapPin /> <a href="#">47, Wodonga Street, Beverly, SA 5009</a></li>
-                        <li><Phone /> <a href="#">+61 406 257932</a><a href="#">+61 469 867126</a></li>
-                        <li><Mail /> <a href="#">a.mechanicrepair@gmail.com</a></li>
+                        <li><MapPin /> <a href="https://www.google.com/maps/@-34.8942857,138.5425572,0a,49.8y,91.89h,86.02t/data=!3m4!1e1!3m2!1s67roZyQr1ukDC0RHjepzxw!2e0?source=apiv3" target='_blank'>47, Wodonga Street, Beverly, SA 5009</a></li>
+                        <li><Phone /> <a href="https://wa.me/+61406257932" target='_blank'>+61 406 257932</a><a href="https://wa.me/+61469867126" target='_blank'>+61 469 867126</a></li>
+                        <li><Mail /> <a href="mailto:a.mechanicrepair@gmail.com" target='_blank'>a.mechanicrepair@gmail.com</a></li>
                         <li><Socials /></li>
                     </ul>
                 </div>

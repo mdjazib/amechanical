@@ -7,7 +7,7 @@ const Socials = () => {
             <a href="#"><Instagram /></a>
             <a href="#"><Facebook /></a>
             <a href="#"><Twitter /></a>
-            <a href="#"><Mail /></a>
+            <a href="mailto:a.mechanicrepair@gmail.com" target='_blank'><Mail /></a>
         </div>
     )
 }

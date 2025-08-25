@@ -18,8 +18,8 @@ const Header = () => {
           <div className="clg"><Clock4 /> <span>Mon - Fri : 09.00 AM - 05.00 PM</span></div>
         </div>
         <div className="col">
-          <div className="clg"><Phone /><a href="#" >+61 406 257932</a></div>
-          <div className="clg"><Phone /><a href="#" >+61 469 867126</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>+61 406 257932</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61469867126" target='_blank' >+61 469 867126</a></div>
           <Socials />
         </div>
       </div>

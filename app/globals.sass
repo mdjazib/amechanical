@@ -785,3 +785,30 @@ footer
         @include baseBackground(-1)
         background-image: repeating-linear-gradient(0deg, lch(from var(--base-color) calc(l - 3) c h) 0 1px, transparent 1px 24px), repeating-linear-gradient(90deg, lch(from var(--base-color) calc(l - 3) c h) 0 1px, transparent 1px 24px)
         width: 100%
+
+.whatsapp-fixed-cta
+  position: fixed
+  bottom: 20px
+  right: 20px
+  @include baseBackground()
+  width: 75px
+  height: 75px
+  border-radius: 100px
+  border: 1px solid
+  @include baseBorder(-10)
+  @include flex()
+  svg
+    @include accentFill()
+    @include textStroke()
+    stroke-width: 2
+    height: 50px
+    width: 50px
+    animation: shaking .4s ease infinite
+    @keyframes shaking
+      50%
+        rotate: -10deg
+  &:hover
+    @include accentBackground()
+    svg
+      @include baseFill()
+      stroke-width: 1
