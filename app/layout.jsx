@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "A Mechanical Repairs",
     images: [
       {
-        url: "https://amechanical.vercel.app/meta.jpg",
+        url: "https://amechanical.vercel.app/meta.png",
         width: 1200,
         height: 630,
         alt: "A Mechanical Repairs Workshop",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "A Mechanical Repairs",
     description: "A Mechanical Repairs is your trusted partner for complete automotive care in Australia. We provide fast, reliable, and affordable car repairs, servicing, and upgrades with a commitment to quality workmanship and customer satisfaction. From routine maintenance and logbook servicing to complex mechanical repairs, roadside assistance, tyres, brakes, and suspension upgrades – we ensure your vehicle stays safe, reliable, and road-ready at all times.",
-    images: ["https://amechanical.vercel.app/meta.jpg"],
+    images: ["https://amechanical.vercel.app/meta.png"],
   },
 };
 
