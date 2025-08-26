@@ -45,7 +45,7 @@ const page = () => {
                             <li>🔑 Lockout assistance (car door unlocking)</li>
                             <li>🚗 On-the-spot minor mechanical repairs</li>
                             <li>🛠️ Towing to our workshop if repair is not possible on-site</li>
-                            <li>📞 24/7 customer support for immediate help</li>
+                            <li>📞 7 days a week, customer support for immediate help</li>
                         </ol>
 
                         <p>

@@ -38,7 +38,7 @@ const page = () => {
             <p>Contact Now</p>
             <h2>Quality Repairs with Honest Pricing</h2>
             <p>No hidden costs, no shortcuts. Just professional repairs, fair pricing, and peace of mind every time you visit.</p>
-            <Link href="https://wa.me/+61406257932" target='_blank'><Phone /> 40 625 7932</Link>
+            <Link href="tel:+61406257932" target='_blank'><Phone /> 40 625 7932</Link>
           </div>
           <Image src="/slider (2).jpeg" alt="Workshop service" width={1200} height={600} />
         </div>
@@ -47,7 +47,7 @@ const page = () => {
             <p>Fast & Reliable</p>
             <h2>Get Back on the Road — Same Day Service</h2>
             <p>Our skilled team ensures efficient diagnostics and repairs so you spend less time waiting and more time driving.</p>
-            <Link href="https://wa.me/+61406257932" target='_blank'>Get a Free Quote</Link>
+            <Link href="tel:+61406257932" target='_blank'>Get a Free Quote</Link>
           </div>
           <Image src="/slider (3).jpeg" alt="Car maintenance" width={1200} height={600} />
         </div>

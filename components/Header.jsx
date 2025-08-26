@@ -18,8 +18,8 @@ const Header = () => {
           <div className="clg"><Clock4 /> <span>Mon - Fri : 09.00 AM - 05.00 PM</span></div>
         </div>
         <div className="col">
-          <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>406 257932</a></div>
-          <div className="clg"><Phone /><a href="https://wa.me/+61469867126" target='_blank' >469 867126</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>0406 257932</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61469867126" target='_blank' >0469 867126</a></div>
           <Socials />
         </div>
       </div>
@@ -42,7 +42,7 @@ const Header = () => {
             <li onClick={() => { setMenu(false) }}><Link href="/services" className={pathname === "/services" ? "active" : "inactive"}>Services</Link></li>
             <li onClick={() => { setMenu(false) }}><Link href="/contact" className={pathname === "/contact" ? "active" : "inactive"}>Contact</Link></li>
           </ul>
-          <Link href="https://wa.me/+61406257932" target='_blank' className="quote">
+          <Link href="tel:+61406257932" target='_blank' className="quote">
             <span>Get a quote</span>
             <ArrowRight />
           </Link>
@@ -52,7 +52,7 @@ const Header = () => {
         </div>
       </header>
       <Marquee>
-        🔧 A Mechanical Car Repair — fast, honest & reliable • ✉️ Email: a.mechanicrepair@gmail.com • 📞 Malik: <b>406 257 932</b> • 📞 Raza: <b>469 867 126</b> • 📍 47, Wodonga Street, Beverly, SA 5009 • 💬 “We fix it right — the first time.” • 🏁 Same-day service on most jobs
+        🔧 A Mechanical Car Repair — fast, honest & reliable • ✉️ Email: a.mechanicrepair@gmail.com • <Phone className='svg' /> Malik: <b>0406 257 932</b> • <Phone className='svg' /> Raza: <b>0469 867 126</b> • 📍 47, Wodonga Street, Beverly, SA 5009 • 💬 “We fix it right — the first time.” • 🏁 Same-day service on most jobs
       </Marquee>
     </>
   )

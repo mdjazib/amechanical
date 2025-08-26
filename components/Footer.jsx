@@ -19,7 +19,7 @@ const Footer = () => {
                     <h2>Address</h2>
                     <ul>
                         <li><MapPin /> <a href="https://www.google.com/maps/@-34.8942857,138.5425572,0a,49.8y,91.89h,86.02t/data=!3m4!1e1!3m2!1s67roZyQr1ukDC0RHjepzxw!2e0?source=apiv3" target='_blank'>47, Wodonga Street, Beverly, SA 5009</a></li>
-                        <li><Phone /> <a href="https://wa.me/+61406257932" target='_blank'>406 257932</a><a href="https://wa.me/+61469867126" target='_blank'>469 867126</a></li>
+                        <li><Phone /> <a href="https://wa.me/+61406257932" target='_blank'>0406 257932</a><a href="https://wa.me/+61469867126" target='_blank'>0469 867126</a></li>
                         <li><Mail /> <a href="mailto:a.mechanicrepair@gmail.com" target='_blank'>a.mechanicrepair@gmail.com</a></li>
                         <li><Socials /></li>
                     </ul>
@@ -28,9 +28,10 @@ const Footer = () => {
                     <h2>Working Hours</h2>
                     <ul>
                         <li className="y"><b>Monday - Friday:</b> <span>09.00 AM - 05.00 PM</span></li>
-                        <li className="y"><b>Public Holidays:</b> <span>Open for booking only</span></li>
                         <li className="y"><b>Saturday:</b> <span>09.00 AM - 3.00 PM</span></li>
                         <li className="y"><b>Sunday:</b> <span>10.00 AM - 3.00 PM</span></li>
+                        <li className="y"><b>Saturday and Sunday:</b> <span>Booking person only</span></li>
+                        <li className="y"><span>Open on public holidays</span></li>
                     </ul>
                 </div>
                 <div className="col">
