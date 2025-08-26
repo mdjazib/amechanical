@@ -838,3 +838,28 @@ footer
     svg
       @include baseFill()
       stroke-width: 1
+
+.stars
+  @include flex(flex-start,center,row,10px)
+  @include baseBackground()
+  padding: 2.5px 6px
+  .group
+    @include flex(space-evenly,center,row,5px)
+    svg
+      height: 16px
+      width: 16px
+      @include accentFill()
+      @include accentStroke()
+      &:nth-last-child(1)
+        fill: none
+  p
+    @include accentColor()
+    font-size: 14px
+    white-space: nowrap
+  @media (max-width:1000px)
+    @include baseBackground(-5)
+    justify-content: center
+    width: 100%
+    height: 100%
+    .group
+      height: 100%

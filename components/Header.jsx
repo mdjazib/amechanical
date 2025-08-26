@@ -1,5 +1,5 @@
 "use client"
-import { AlignJustify, ArrowRight, Clock4, MapPin, Phone, X } from 'lucide-react'
+import { AlignJustify, ArrowRight, Clock4, MapPin, Phone, Star, X } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Marquee from "react-fast-marquee"
@@ -20,7 +20,16 @@ const Header = () => {
         <div className="col">
           <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>0406 257932</a></div>
           <div className="clg"><Phone /><a href="https://wa.me/+61469867126" target='_blank' >0469 867126</a></div>
-          <Socials />
+          <div className="stars">
+            <div className="group">
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+              <Star />
+            </div>
+            <p>4.5+ Rating on google</p>
+          </div>
         </div>
       </div>
       <header>
