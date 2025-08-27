@@ -1,7 +1,5 @@
 import Services from '@/components/Services'
-import { ChevronsRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 export const metadata = {
@@ -16,9 +14,6 @@ const page = () => {
             <div className="road-side-assitance">
                 <div className="banner">
                     <div className="overlay">
-                        <div className="breadcrumb">
-                            <Link href="/">Home</Link><ChevronsRight /><div className="active">Road Side Assitance</div>
-                        </div>
                     </div>
                     <Image src="/road.jpg" width={1800} height={800} alt='road-side-assitance' />
                 </div>
