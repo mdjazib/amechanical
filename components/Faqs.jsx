@@ -26,7 +26,7 @@ const faqsData = [
     {
         question: "What’s your workshop address?",
         answer:
-            "Our workshop is located at 47, Wodonga Street, Beverly, SA 5009. You can also reach us at +61 406 257932 / +61 469 867126 or email us at a.mechanicrepair@gmail.com."
+            `Our workshop is located at 47, Wodonga Street, Beverly, SA 5009. You can also reach us at 0406 257 932 / 0421 640 653 or email us at a.mechanicrepair@gmail.com.`
     }
 ];
 

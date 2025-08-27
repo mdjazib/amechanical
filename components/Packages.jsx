@@ -7,13 +7,17 @@ const Packages = () => {
             <div className="header">
                 <p><Asterisk /><span>Service & Care</span><Asterisk /></p>
                 <h1>Our Packages</h1>
-                <p>From routine checkups to complete care — choose the right package to keep your car in top shape.</p>
+                <p>
+                    From routine checkups to complete care — choose the right package to keep your car in top shape.
+                    All parts are sourced from <b>genuine, recommended manufacturers</b> for lasting performance.
+                </p>
             </div>
+
             <div className="packages">
                 <div className="center">
                     <div className="package">
                         <div className="header">
-                            <h1>01</h1>
+                            <h1>99$</h1>
                             <p>Standard</p>
                         </div>
                         <ul>
@@ -29,32 +33,29 @@ const Packages = () => {
                     </div>
                     <div className="package">
                         <div className="header">
-                            <h1>02</h1>
+                            <h1>249$</h1>
                             <p>VIP</p>
                         </div>
                         <ul>
                             <li><Check /><span>Includes all Advanced services</span></li>
                             <li><Check /><span>Full brake service (pads, rotors, fluid)</span></li>
-                            <li><Check /><span>Wheel alignment & balancing</span></li>
+                            <li><Check /><span>Add-ons available</span></li>
                             <li><Check /><span>Transmission fluid service</span></li>
                             <li><Check /><span>Detailed engine diagnostic & tune-up</span></li>
                             <li><Check /><span>Throttle body cleaning</span></li>
-                            <li><Check /><span>Spark plugs check & replacement</span></li>
+                            <li><Check /><span>Spark plugs check</span></li>
                             <li><Check /><span>Differential & driveline inspection</span></li>
                             <li><Check /><span>Suspension lubrication service</span></li>
                             <li><Check /><span>Complete underbody inspection</span></li>
-                            <li><Check /><span>Air conditioning regas (if required)</span></li>
                             <li><Check /><span>Fuel injector cleaning</span></li>
                             <li><Check /><span>Detail wash & interior vacuum</span></li>
                             <li><Check /><span>Rust prevention spray</span></li>
                             <li><Check /><span>Priority same-day service</span></li>
-                            <li><Check /><span>Free roadside assistance (3 months)</span></li>
-                            <li><Check /><span>Complimentary pick-up & drop-off</span></li>
                         </ul>
                     </div>
                     <div className="package">
                         <div className="header">
-                            <h1>03</h1>
+                            <h1>349$</h1>
                             <p>Advanced</p>
                         </div>
                         <ul>
@@ -67,7 +68,6 @@ const Packages = () => {
                             <li><Check /><span>Cooling system pressure test</span></li>
                             <li><Check /><span>Belts & hoses check</span></li>
                             <li><Check /><span>Fuel system cleaning</span></li>
-                            <li><Check /><span>AC system performance check</span></li>
                             <li><Check /><span>Battery terminals cleaning</span></li>
                             <li><Check /><span>Road test & performance feedback</span></li>
                         </ul>

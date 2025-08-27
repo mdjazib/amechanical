@@ -11,7 +11,7 @@ const About = () => {
                     <div className="img">
                         <div className="overlay"></div>
                         <div className="exp">
-                            <h1>15 <sub>Years</sub></h1>
+                            <h1>25 <sup>+</sup> <sub>Years</sub></h1>
                             <h2>Experience</h2>
                         </div>
                         <Image src="/about.jpeg" alt='About' width={500} height={500} />

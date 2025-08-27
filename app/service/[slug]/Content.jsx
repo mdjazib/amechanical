@@ -31,11 +31,11 @@ const Content = () => {
                         <Image src={`/${service?.slug}.jpeg`} width={1000} height={600} alt={service?.slug} />
                         <div className="content">
                             <h1>{service?.title}</h1>
-                            <p>{service?.description}</p>
+                            <p dangerouslySetInnerHTML={{ __html: service?.description }} />
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <Services slug={slug} />
         </>
     )

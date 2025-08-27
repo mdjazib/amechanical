@@ -3,7 +3,6 @@ import { AlignJustify, ArrowRight, Clock4, MapPin, Phone, Star, X } from 'lucide
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Marquee from "react-fast-marquee"
-import Socials from './Socials'
 import { usePathname } from 'next/navigation'
 import Logo from '@/app/Logo'
 
@@ -18,8 +17,8 @@ const Header = () => {
           <div className="clg"><Clock4 /> <span>Mon - Fri : 09.00 AM - 05.00 PM</span></div>
         </div>
         <div className="col">
-          <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>0406 257932</a></div>
-          <div className="clg"><Phone /><a href="https://wa.me/+61469867126" target='_blank' >0469 867126</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61406257932" target='_blank'>0406 257 932</a></div>
+          <div className="clg"><Phone /><a href="https://wa.me/+61421640653" target='_blank' >0421 640 653</a></div>
           <div className="stars">
             <div className="group">
               <Star />
@@ -61,7 +60,7 @@ const Header = () => {
         </div>
       </header>
       <Marquee>
-        🔧 A Mechanical Car Repair — fast, honest & reliable • ✉️ Email: a.mechanicrepair@gmail.com • <Phone className='svg' /> Malik: <b>0406 257 932</b> • <Phone className='svg' /> Raza: <b>0469 867 126</b> • 📍 47, Wodonga Street, Beverly, SA 5009 • 💬 “We fix it right — the first time.” • 🏁 Same-day service on most jobs
+        🔧 A Mechanical Car Repair — fast, honest & reliable • ✉️ Email: a.mechanicrepair@gmail.com • <Phone className='svg' /> Malik: <b>0406 257 932</b> • <Phone className='svg' /> Raza: <b>0421 640 653</b> • 📍 47, Wodonga Street, Beverly, SA 5009 • 💬 “We fix it right — the first time.” • 🏁 Same-day service on most jobs
       </Marquee>
     </>
   )
