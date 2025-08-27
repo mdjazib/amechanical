@@ -33,7 +33,7 @@ const Services = ({ slug = "", title = "Our Services" }) => {
                             >
                                 <Image src={`/${e.slug}.jpeg`} width={300} height={300} alt={e.slug} />
                                 <h3>{e.title}</h3>
-                                <p>{e.description.slice(0, 80)}...</p>
+                                <p>{e.description.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 80)}...</p>
                                 <div className="more"><span>Read more</span><ChevronRight /></div>
                             </Tilt>
                         </Link>

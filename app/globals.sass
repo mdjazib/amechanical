@@ -809,6 +809,17 @@ footer
       p
         @include textColor(20)
         font-size: clamp(12px,3vw,14px)
+      ul
+        padding: 20px 20px 20px 18px
+        @include flex(flex-start,flex-start,column,22px)
+        list-style: none
+        li
+          a
+            border: 1px solid
+            @include textBorder()
+            @include textColor()
+            padding: 6px 18px
+            text-decoration: none
       ol
         padding: 20px 20px 20px 38px
         @include flex(flex-start,flex-start,column,8px)

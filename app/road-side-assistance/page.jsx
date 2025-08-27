@@ -53,6 +53,12 @@ const page = () => {
                             Drive with confidence knowing our expert team is just a call away to provide fast, affordable, and
                             dependable roadside assistance.
                         </p>
+
+                        <h3>Contact us:</h3>
+                        <ul>
+                            <li>Malik: <a href="tel:+61406257932" target='_blank'>0406 257 932</a></li>
+                            <li>Raza: <a href="tel:+61421640653" target='_blank'>0421 640 653</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
