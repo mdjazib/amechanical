@@ -426,15 +426,14 @@ footer
         li
           @include flex(flex-start,center,row,8px)
           .social
-            @include flex($g: 1px)
-            @include baseBackground(-95)
-            border: 1px solid
-            @include baseBorder(-95)
+            @include flex($g: 10px)
             a
-              @include baseBackground(-100)
+              @include baseBackground(-85)
               width: 40px
               height: 40px
               @include flex()
+              svg
+                @include textColor(90)
               &:hover
                 svg
                   @include accentColor()
